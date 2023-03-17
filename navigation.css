@@ -1,0 +1,717 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 23px 10px;
+}
+
+.header .logo {
+  display: block;
+}
+
+.header .menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: -100vw;
+  opacity: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .menu .menuitems {
+  padding: 7px;
+}
+
+.header .menu .menuitems a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .hamburger {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .hamburger .bar {
+  background-color: white;
+  z-index: 100;
+  height: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.header .hamburger #top {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.header .hamburger #middle {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  width: 70%;
+}
+
+.header .hamburger #bottom {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.header .open {
+  opacity: 1;
+  left: 0;
+  background-color: black;
+  height: 300px;
+}
+
+.header .open #top {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+  background-color: white;
+}
+
+.header .open #middle {
+  opacity: 0;
+}
+
+.header .open #bottom {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+  background-color: white;
+}
+
+.banner {
+  background-image: url(./img/BG.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.692);
+  background-blend-mode: overlay;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner h3 {
+  color: gold;
+  padding-bottom: 10px;
+}
+
+.banner h1 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.banner h6 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman';
+  padding-bottom: 50px;
+}
+
+.banner button {
+  padding: 10px 40px 10px 40px;
+  font-size: 20px;
+  border-color: gold;
+}
+
+.banner .text {
+  margin-top: 200px;
+}
+
+.about {
+  background-color: black;
+  color: white;
+}
+
+.about .left {
+  border: 2px solid gold;
+  margin-bottom: 20px;
+}
+
+.about button {
+  background-color: gold;
+  border: gold solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.about h2 span {
+  color: gold;
+}
+
+.about .icons {
+  text-align: center;
+}
+
+.about .icons img {
+  padding: 100px 20px 40px 0px;
+}
+
+.contact {
+  background-image: url(./img/map.png);
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.375);
+  background-blend-mode: overlay;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  padding-top: 40px;
+}
+
+.contact h2 span {
+  color: gold;
+}
+
+.contact h4 {
+  font-size: 20px;
+}
+
+.contact .info {
+  background-color: black;
+  color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 40px 0px 40px 0px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.contact .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact button {
+  width: 150px;
+  border: solid white;
+}
+
+.contact .github {
+  background-color: gold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hire {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.hire span {
+  color: gold;
+}
+
+.hire .first, .hire .second, .hire .third {
+  padding: 20px;
+}
+
+.hire h4 {
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.hire .two {
+  border: 2px solid white;
+  margin-left: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.hire .fourth {
+  padding: 20px;
+}
+
+.hire .fourth input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: black;
+  width: 250px;
+  margin-right: 20px;
+  outline: 0;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hire button {
+  border: solid gold;
+  background-color: gold;
+  color: black;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+}
+
+.works {
+  text-align: center;
+  padding-top: 40px;
+  height: 400px;
+  background-color: gold;
+}
+
+.works p {
+  font-size: 25px;
+}
+
+.footer {
+  text-align: center;
+  background-color: gold;
+  height: 70px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 23px 10px;
+  }
+  .header .logo {
+    display: block;
+  }
+  .header .menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: -100vw;
+    opacity: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .menu .menuitems {
+    padding: 7px;
+  }
+  .header .menu .menuitems a {
+    color: black;
+    text-decoration: none;
+  }
+  .header .hamburger {
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .hamburger .bar {
+    background-color: white;
+    z-index: 100;
+    height: 10px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .header .hamburger #top {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+  }
+  .header .hamburger #middle {
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    width: 70%;
+  }
+  .header .hamburger #bottom {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+  }
+  .header .open {
+    opacity: 1;
+    left: 0;
+    background-color: gold;
+  }
+  .header .open #top {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
+    background-color: white;
+  }
+  .header .open #middle {
+    opacity: 0;
+  }
+  .header .open #bottom {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
+    background-color: white;
+  }
+  .banner {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+    text-align: center;
+    height: 950px;
+  }
+  .banner h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+  }
+  .banner h6 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman';
+    padding-bottom: 50px;
+  }
+  .banner .text {
+    margin-top: 200px;
+  }
+  .about {
+    height: 800px;
+    color: white;
+    background-color: black;
+  }
+  .about span {
+    color: gold;
+  }
+  .about h2 {
+    text-align: center;
+    padding: 40px 0px 100px 0px;
+  }
+  .about .left {
+    border: 2px solid gold;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .about .left h4 {
+    padding-bottom: 20px;
+    font-size: 27px;
+  }
+  .about .left p {
+    padding-bottom: 20px;
+  }
+  .about .left button {
+    background-color: gold;
+    border: gold solid;
+    border-radius: 20px;
+  }
+  .about .image {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .about .row {
+    margin-left: 200px;
+  }
+  .about .icons {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -100px;
+  }
+  .about .icons img {
+    padding-left: 20px;
+  }
+  .contact {
+    background-image: url(./img/map.png);
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.563);
+    background-blend-mode: overlay;
+    color: white;
+    text-align: center;
+  }
+  .contact h2 {
+    padding-top: 40px;
+  }
+  .contact h2 span {
+    color: gold;
+  }
+  .contact .info {
+    background-color: black;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 40px 0px 40px 0px;
+    margin-left: 1020px;
+    margin-top: 100px;
+  }
+  .contact .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact button {
+    width: 150px;
+    border: solid white;
+  }
+  .contact .github {
+    background-color: gold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .hire {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    height: 900px;
+  }
+  .hire span {
+    color: gold;
+  }
+  .hire .first, .hire .second, .hire .third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+  }
+  .hire .two {
+    border: 2px solid white;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .hire .fourth {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .hire .fourth input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    width: 250px;
+    margin-right: 20px;
+    outline: 0;
+    color: white;
+  }
+  .hire button {
+    border: solid gold;
+    background-color: gold;
+    color: black;
+    padding: 10px 40px 10px 40px;
+  }
+  .works {
+    text-align: center;
+    padding-top: 40px;
+    height: 700px;
+    background-color: gold;
+  }
+  .works p {
+    font-size: 25px;
+  }
+  .footer {
+    text-align: center;
+    background-color: gold;
+    height: 70px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width */
+/*# sourceMappingURL=navigation.css.map */
