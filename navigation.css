@@ -541,7 +541,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     background-position: center;
     padding-bottom: 70px;
     text-align: center;
-    height: 950px;
+    height: 80vh;
   }
   .banner h1 {
     font-size: 60px;
@@ -572,6 +572,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border: 2px solid gold;
     padding-bottom: 50px;
     padding-top: 30px;
+    margin-left: -60px;
   }
   .about .left h4 {
     padding-bottom: 20px;
@@ -587,7 +588,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .about .image {
     width: 300px;
-    margin-left: 20px;
+    margin-left: 100px;
   }
   .about .row {
     margin-left: 200px;
@@ -705,6 +706,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     text-align: center;
     background-color: gold;
     height: 70px;
+  }
+  .footer p {
+    padding-top: 20px;
   }
 }
 

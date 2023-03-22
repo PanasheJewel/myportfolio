@@ -227,7 +227,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     
         
 
-        .banner{ background-size: cover; background-position: center; padding-bottom: 70px; text-align: center; height: 950px;
+        .banner{ background-size: cover; background-position: center; padding-bottom: 70px; text-align: center; height: 80vh;
           h1{font-size: 60px; padding-bottom: 10px;}
           h6{font-size: 20px; letter-spacing: 2px; font-family: 'Times New Roman'; padding-bottom: 50px;}  
            .text{margin-top: 200px;}
@@ -237,12 +237,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         .about{ height: 800px; color: white; background-color: black;
           span{color: gold;}
           h2{text-align: center; padding: 40px 0px 100px 0px;}
-        .left{border: 2px solid gold; padding-bottom: 50px; padding-top: 30px; 
+        .left{border: 2px solid gold; padding-bottom: 50px; padding-top: 30px;  margin-left: -60px;
         h4{padding-bottom: 20px; font-size: 27px;}
         p{padding-bottom: 20px;}
         button{background-color: gold; border: gold solid ; border-radius: 20px;}
         }
-        .image{width: 300px; margin-left:20px;}
+        .image{width: 300px; margin-left:100px;}
         .row{margin-left: 200px;}
         .icons{ text-align: center;  margin-top: 40px; margin-left: -100px;
         img{padding-left: 20px;}
@@ -279,7 +279,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .works{text-align: center; padding-top: 40px; height: 700px; background-color: gold; 
 p{font-size: 25px; }
 }
-.footer{text-align: center; background-color: gold; height: 70px;}
+.footer{text-align: center; background-color: gold; height: 70px; 
+p{padding-top: 20px;}
+}
 
 
 
