@@ -201,7 +201,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .header{display: flex; justify-content: space-between; padding-top: 5px; align-items: center; position: absolute; width: 100%; padding: 23px 10px;
+  .header{display: flex; justify-content: space-between; padding-top: 5px; align-items: center; position: absolute; width: 100%; padding: 23px 10px; padding-left: 30px; padding-right: 40px;
     
     .logo{display: block;}
         .menu{position: absolute; top: 0;   width: 100%;  left: -100vw; opacity: 0; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; 
@@ -209,7 +209,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     
     .hamburger{
-        height: 40px; width: 40px; display: flex; flex-direction: column; justify-content: center;
+        height: 40px; width: 40px; display: flex; flex-direction: column; 
         .bar{background-color: white; z-index: 100; height: 10px; width: 100%;  border-radius: 4px; }
         #top{transform: translateY(-5px); transition: all .7s ease;}
         #middle{transition: all .7s ease; width: 70%;}

@@ -448,6 +448,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     position: absolute;
     width: 100%;
     padding: 23px 10px;
+    padding-left: 30px;
+    padding-right: 40px;
   }
   .header .logo {
     display: block;
@@ -490,9 +492,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .header .hamburger .bar {
     background-color: white;
